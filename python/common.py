@@ -17,7 +17,7 @@ class PotFactory:
             if not port: port = 3306
             if not host: host = '127.0.0.1'
             dbopts = {'user': user, 'passwd': passwd, 'host': host, 'port': int(port), 'db': db, 'cp_reconnect': True}
-            self.dbpool = adbapi.ConnectionPool('MySQLdb', **dbopts)
+            self.dbpool = adbapi.ConnectionPool('pymysql', **dbopts)
 
     def updatePot(self, login, password, host):
         log.msg('Thank you %s - %s : %s' % (host, login.decode("utf8"), password.decode("utf8")))
