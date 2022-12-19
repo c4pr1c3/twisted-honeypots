@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo apt-get update
-sudo apt-get install geoip-bin -y
+apt-get update
+apt-get install geoip-bin mariadb-server -y
 pip3 install -r requirements.txt --user --upgrade

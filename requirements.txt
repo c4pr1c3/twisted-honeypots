@@ -1,1 +1,6 @@
 Twisted
+cryptography
+bcrypt
+pyasn1
+PyMySQL
+mysqlclient
